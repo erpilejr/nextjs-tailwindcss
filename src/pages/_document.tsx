@@ -1,13 +1,19 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Main, Head, NextScript } from 'next/document'
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+import { TopNav } from '@/components/TopNav/TopNav'
+
+export default class MyDocument extends Document {
+  render() {
+    return (
+      <Html lang="en">
+        <Head />
+        <body>
+          <TopNav />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }
+

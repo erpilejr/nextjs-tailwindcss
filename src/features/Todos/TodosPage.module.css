@@ -1,0 +1,13 @@
+.container {
+  background: salmon;
+  padding: 20px;
+}
+
+.input {
+  width: 200px;
+  height: 100px;
+}
+
+.buttonWrap {
+  margin-top: 10px;
+}
