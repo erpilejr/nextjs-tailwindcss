@@ -1,0 +1,2 @@
+export $( grep -vE "^(#.*|\s*)$" .env.local )
+supabase gen types typescript --db-url postgresql://postgres:${SUPABASE_PASSWORD}@db.bzsfupjoncbilvzcfkfx.supabase.co:6543/postgres > ./src/schema/schema.ts

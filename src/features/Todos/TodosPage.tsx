@@ -18,7 +18,7 @@ export function TodosPage({
             <h1>Todos</h1>
             <ul>
                 {(todos || []).map(todo => {
-                    return <li>{todo}</li>
+                    return <li>{todo?.name}</li>
                 })}
             </ul>
             <input className={styles.input}></input>
